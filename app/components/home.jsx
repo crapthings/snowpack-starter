@@ -2,11 +2,11 @@ import React from 'react'
 
 import useAppStore from '../stores'
 
-const App = () => {
+const HomeComponent = () => {
   const { test } = useAppStore(({ test }) => ({ test }))
   return (
     <div>{test}</div>
   )
 }
 
-export default () => <App />
+export default () => <HomeComponent />
