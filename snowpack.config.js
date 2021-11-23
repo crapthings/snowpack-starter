@@ -1,17 +1,28 @@
 module.exports = {
-  // root: './app',
   mount: {
-    app: '/',
+    src: '/',
     static: {
       url: '/static',
       static: true,
       resolve: false
-    },
-  },
-  devOptions: {
-    tailwindConfig: './tailwind.config.js',
+    }
   },
   plugins: [
-    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-postcss'
   ],
+  packageOptions: {
+  },
+  devOptions: {
+    tailwindConfig: './tailwind.config.js'
+  },
+  buildOptions: {
+    jsxInject: 'import React from \'react\''
+  },
+  routes: [
+    {
+      match: 'routes',
+      src: '.*',
+      dest: '/index.html'
+    }
+  ]
 }

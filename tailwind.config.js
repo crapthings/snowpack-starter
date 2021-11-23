@@ -1,14 +1,17 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./app/**/*.html', './app/**/*.{js,jsx}'],
+  purge: [
+    './src/**/*.html',
+    './src/**/*.{js,jsx}'
+  ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
   plugins: [
-    require('daisyui'),
-  ],
+    require('daisyui')
+  ]
 }
