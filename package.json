@@ -6,20 +6,20 @@
   },
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",
-    "autoprefixer": "^10.4.2",
-    "daisyui": "^1.25.4",
-    "postcss": "^8.4.8",
+    "autoprefixer": "^10.4.4",
+    "daisyui": "^2.11.0",
+    "postcss": "^8.4.12",
     "snowpack": "^3.8.8",
     "standard": "^16.0.4",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "dayjs": "^1.10.8",
+    "dayjs": "^1.11.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.27.1",
+    "react-hook-form": "^7.28.1",
     "react-router-dom": "^6.2.2",
     "zustand": "^3.7.1"
   }
