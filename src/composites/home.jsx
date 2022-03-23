@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import stores from '../stores'
 
 import Welcome from '../components/welcome'

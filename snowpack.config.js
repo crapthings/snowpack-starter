@@ -16,7 +16,7 @@ module.exports = {
     tailwindConfig: './tailwind.config.js'
   },
   buildOptions: {
-    jsxInject: 'import React from \'react\''
+    jsxInject: 'import _ from \'lodash\'\nimport React, { useEffect, useLayoutEffect, useRef } from \'react\'\nimport faker from \'@faker-js/faker\''
   },
   routes: [
     {

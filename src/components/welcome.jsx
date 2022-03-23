@@ -1,3 +1,6 @@
 export default () => (
-  <h1>Welcome</h1>
+  <div>
+    <h1>Welcome</h1>
+    <p>{faker.lorem.sentence()}</p>
+  </div>
 )
