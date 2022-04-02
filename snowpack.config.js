@@ -13,7 +13,8 @@ module.exports = {
     }
   },
   plugins: [
-    '@snowpack/plugin-postcss'
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-react-refresh'
   ],
   packageOptions: {
     knownEntrypoints: [
@@ -32,11 +33,8 @@ module.exports = {
   },
   buildOptions: {
     jsxInject: `
-      import _ from 'lodash'
-      import dayjs from 'dayjs'
       import React, { useEffect, useLayoutEffect, useRef } from 'react'
       import classNames from 'classnames'
-      import faker from '@faker-js/faker'
     `.replace(/^\s+/gm, '')
   },
   routes: [

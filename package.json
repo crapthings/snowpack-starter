@@ -7,6 +7,7 @@
   "devDependencies": {
     "@faker-js/faker": "^6.1.1",
     "@snowpack/plugin-postcss": "^1.4.3",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
     "autoprefixer": "^10.4.4",
     "daisyui": "^2.13.5",
     "postcss": "^8.4.12",
