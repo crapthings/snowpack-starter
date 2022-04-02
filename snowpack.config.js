@@ -11,12 +11,24 @@ module.exports = {
     '@snowpack/plugin-postcss'
   ],
   packageOptions: {
+    knownEntrypoints: [
+      'lodash',
+      'dayjs',
+      'classnames',
+      '@faker-js/faker',
+    ]
   },
   devOptions: {
     tailwindConfig: './tailwind.config.js'
   },
   buildOptions: {
-    jsxInject: 'import _ from \'lodash\'\nimport React, { useEffect, useLayoutEffect, useRef } from \'react\'\nimport faker from \'@faker-js/faker\''
+    jsxInject: `
+      import _ from \'lodash\'\n
+      import dayjs from \'dayjs\'\n
+      import React, { useEffect, useLayoutEffect, useRef } from \'react\'\n
+      import classNames from \'classnames\'\n
+      import faker from \'@faker-js/faker\'\n
+    `.trim()
   },
   routes: [
     {

@@ -1,5 +1,7 @@
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 import Router from './router'
 
-render(Router(), document.getElementById('app'))
+const router = createRoot(document.getElementById('app'))
+
+router.render(Router())
