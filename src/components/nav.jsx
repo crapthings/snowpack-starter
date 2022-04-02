@@ -9,7 +9,7 @@ export default () => {
   const location = useLocation()
 
   const isActive = (path) => classNames({
-    'text-red-900': path === location.pathname
+    'text-blue-500': path === location.pathname
   })
 
   return (

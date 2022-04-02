@@ -1,7 +1,7 @@
-const fs = require('fs')
+// const fs = require('fs')
 
-const cert = fs.readFileSync('./localhost.cert')
-const key = fs.readFileSync('./localhost.key')
+// const cert = fs.readFileSync('./localhost.cert')
+// const key = fs.readFileSync('./localhost.key')
 
 module.exports = {
   mount: {
@@ -24,10 +24,10 @@ module.exports = {
     ]
   },
   devOptions: {
-    secure: {
-      cert,
-      key
-    },
+    // secure: {
+    //   cert,
+    //   key
+    // },
     tailwindConfig: './tailwind.config.js'
   },
   buildOptions: {
