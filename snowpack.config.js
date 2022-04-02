@@ -1,3 +1,8 @@
+const fs = require('fs')
+
+const cert = fs.readFileSync('./localhost.cert')
+const key = fs.readFileSync('./localhost.key')
+
 module.exports = {
   mount: {
     src: '/',
@@ -19,6 +24,10 @@ module.exports = {
     ]
   },
   devOptions: {
+    secure: {
+      cert,
+      key
+    },
     tailwindConfig: './tailwind.config.js'
   },
   buildOptions: {
@@ -28,7 +37,7 @@ module.exports = {
       import React, { useEffect, useLayoutEffect, useRef } from 'react'
       import classNames from 'classnames'
       import faker from '@faker-js/faker'
-    `.replace(/^\s+/gm, ''))
+    `.replace(/^\s+/gm, '')
   },
   routes: [
     {
