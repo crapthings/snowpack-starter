@@ -23,12 +23,12 @@ module.exports = {
   },
   buildOptions: {
     jsxInject: `
-      import _ from \'lodash\'\n
-      import dayjs from \'dayjs\'\n
-      import React, { useEffect, useLayoutEffect, useRef } from \'react\'\n
-      import classNames from \'classnames\'\n
-      import faker from \'@faker-js/faker\'\n
-    `.trim()
+      import _ from 'lodash'
+      import dayjs from 'dayjs'
+      import React, { useEffect, useLayoutEffect, useRef } from 'react'
+      import classNames from 'classnames'
+      import faker from '@faker-js/faker'
+    `.replace(/^\s+/gm, ''))
   },
   routes: [
     {
